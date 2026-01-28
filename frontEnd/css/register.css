@@ -3,20 +3,20 @@
     padding: 0px;
     margin: 0px;
 }
+body{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh; 
+background-image: url(image/food_2.png);
+background-position: center;
+background-size: cover;
+object-fit: cover;
+}
 .container{
      background-color: #0082b5; 
      opacity: 0.9;   
      }
-    body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; 
-    background-image: url(image/food_2.png);
-    background-position: center;
-    background-size: cover;
-    object-fit: cover;
-    }
 form{
        padding: 20px 40px;
        display: grid;
@@ -34,6 +34,7 @@ form{
     select{
         grid-column: span 2;
     }
+    /* sumbit button */
     button{
      padding: 10px 40px;
      /* margin-left: 70%; */

@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    margin-bottom: 0px;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
+    margin:0;
+    padding-left: 30px;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+.user-profile {
+    margin-left: 20px;
+    
+}
+
+.user-profile a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0px 10px 0px 0px;
+}
+
+
+.us{
+    background-color: red;
+    height: 20px;
+    width: 20px;
+}
+
+.main_container{
+   justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    margin-top:50px ;
+    padding-left: 50px;
+}
+.about{
+    /* color:#06A3DA ; */
+    font-weight: bold;
+    font-size: 26px;
+}
+.line{
+    background-color: red;
+    height: 4px;
+    width: 80px;
+}
+.line2{
+    background-color: green;
+    height: 4px;
+    width: 80px;
+}
+p{
+    font-size: 24px;
+    line-height: 1.5em;
+    padding: 5px 10px;
+}
+
+footer{
+    margin-top: 118px;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}

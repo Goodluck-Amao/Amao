@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canteen Website</title>
+    <!-- <link rel="stylesheet" href="../css/style.css" /> -->
+    <link rel="stylesheet" href="/frontEnd/css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="logo.png" alt="SilverGold" />
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <!-- <li><a href="#meynu">Menu</a></li> -->
+         <li>   <a href="#">Menu ▾</a>
+        <!-- <div class="dropdown-content">
+          <a href="#breakfast">Breakfast</a>
+          <a href="#lun">Lunch</a>
+          <a href="#dinner">Dinner</a>
+        </div> -->
+        <div class="dropdown-content">
+  <a href="#menu" onclick="openTab('breakfast')">Breakfast</a>
+  <a href="#menu" onclick="openTab('lun')">Lunch</a>
+  <a href="#menu" onclick="openTab('dinner')">Dinner</a>
+</div> 
+
+<!-- <div class="dropdown-content">
+  <a href="#menu" onclick="openTab('breakfast', event)">Breakfast</a>
+  <a href="#menu" onclick="openTab('lun', event)">Lunch</a>
+  <a href="#menu" onclick="openTab('dinner', event)">Dinner</a>
+</div> -->
+
+
+        </li>
+      </li>
+        <li><a href="#order_online">Order Online</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+      <div class="user-profile">
+        <a href="login.html">cart</a>
+        <a href="login.html">Login</a>
+        <a href="login.html">Sign up</a>
+        <!-- <a href="register.html">Register</a> -->
+      </div>
+    </nav>
+  
+
+    <!-- Hero Section -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Welcome to SilverGold Canteen</h1>
+    <p>Delicious, affordable, and fresh meals every day.</p>
+    <a href="#menu" class="btn">View Menu</a>
+  </div>
+</section>
+
+ <!-- menu -->
+<section id="menu" class="menu">
+  <div class="menu-header">
+    <h2>Our Menu</h2>
+    <p>Delicious meals made fresh every day</p>
+    <!-- <span ><a href="#" class="select">Breakfast </a> </span>
+    <span ><a href="#" class="select">Launch </a> </span>
+    <span ><a href="#" class="select">Dinner </a> </span> -->
+    <!-- <div class="tabs">
+    <button class="tab-btn active" onclick="openTab('breakfast')">Breakfast</button>
+    <button class="tab-btn" onclick="openTab('lun')">Lunch</button>
+    <button class="tab-btn" onclick="openTab('dinner')">Dinner</button>
+    </div> -->
+    <!-- <button class="tab-btn active" onclick="openTab('breakfast', event)">Breakfast</button>
+<button class="tab-btn" onclick="openTab('lun', event)">Lunch</button>
+<button class="tab-btn" onclick="openTab('dinner', event)">Dinner</button> -->
+
+<div class="tabs">
+  <button class="tab-btn active" onclick="openTab('breakfast', event)">Breakfast</button>
+  <button class="tab-btn" onclick="openTab('lun', event)">Lunch</button>
+  <button class="tab-btn" onclick="openTab('dinner', event)">Dinner</button>
+</div>
+
+  </div>
+   <!-- Breakfast -->
+  <section id="breakfast" class="tab-content active">
+    <div class="menu-card">
+      <img src="/frontEnd/image/break_4.jpg" alt="Tea">
+      <h3>Beans & Plaintain</h3>
+      <p>₦500</p>
+    <button onclick="openCustomization('Beans & Plantain', 1200)">Customize & Add</button>
+
+      <!-- <button>Add to Cart</button> -->
+    </div>
+    <div class="menu-card">
+      <img src="/frontEnd/image/break.jpg" alt="Pap & Akara">
+      <h3>Pap & Akara</h3>
+      <p>₦700</p>
+    <button onclick="openCustomization('Pap & Akara', 1200)">Customize & Add</button>
+    <!-- <button>Add to Cart</button> -->
+    </div>
+    <div class="menu-card">
+      <img src="/frontEnd/image/beans_and_bread.jpg" alt="Pap & Akara">
+      <h3>Beans & Bread</h3>
+      <p>₦700</p>
+    <button onclick="openCustomization('Beans & Bread', 1200)">Customize & Add</button>
+
+      <!-- <button>Add to Cart</button> -->
+    </div>
+    <div class="menu-card">
+      <img src="/frontEnd/image/break_2.jpg" alt="Pap & Akara">
+      <h3>Pap & Akara</h3>
+      <p>₦700</p>
+    <button onclick="openCustomization('Pap & Akara', 1200)">Customize & Add</button>
+      <!-- <button>Add to Cart</button> -->
+    </div>
+    <div class="menu-card">
+      <img src="/frontEnd/image/break_7.jpg" alt="Pap & Akara">
+      <h3>Plantain Chip</h3>
+      <p>₦700</p>
+    <button onclick="openCustomization('Plaintain Chip', 1200)">Customize & Add</button>
+
+      <!-- <button>Add to Cart</button> -->
+    </div>
+    <div class="menu-card">
+      <img src="/frontEnd/image/break.jpg" alt="Pap & Akara">
+      <h3>Pap & Akara</h3>
+      <p>₦700</p>
+    <button onclick="openCustomization('Pap & Akara', 1200)">Customize & Add</button>
+
+      <!-- <button>Add to Cart</button> -->
+    </div>
+    <!-- <div class="menu-card">
+      <img src="/frontEnd/image/break.jpg" alt="Pap & Akara">
+      <h3>Pap & Akara</h3>
+      <p>₦700</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="menu-card">
+      <img src="/frontEnd/image/break.jpg" alt="Pap & Akara">
+      <h3>Pap & Akara</h3>
+      <p>₦700</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="menu-card">
+      <img src="/frontEnd/image/break.jpg" alt="Pap & Akara">
+      <h3>Pap & Akara</h3>
+      <p>₦700</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="menu-card">
+      <img src="/frontEnd/image/break.jpg" alt="Pap & Akara">
+      <h3>Pap & Akara</h3>
+      <p>₦700</p>
+      <button>Add to Cart</button>
+    </div> -->
+  </section>
+
+  <!-- Lunch -->
+  <section id="lun" class="tab-content ">
+    <div class="menu-card">
+      <img src="/frontEnd/image/dinner_2.jpg" alt="Jollof">
+      <h3>Jollof Rice & Chicken</h3>
+      <p>₦1,500</p>
+    <button onclick="openCustomization(' JOllof Rice & Chicken', 1200)">Customize & Add</button>
+
+      <!-- <button>Add to Cart</button> -->
+    </div>
+    <div class="menu-card">
+      <img src="/frontEnd/image/dinner_4.jpg" alt="Eba">
+      <h3>Eba & Egusi Soup</h3>
+      <p>₦1,800</p>
+    <button onclick="openCustomization('Eba & Egusi Soup', 1200)">Customize & Add</button>
+
+      <!-- <button>Add to Cart</button> -->
+    </div>
+    <div class="menu-card">
+      <img src="/frontEnd/image/dinner_5.jpg" alt="Eba">
+      <h3>Eba & Egusi Soup</h3>
+      <p>₦1,800</p>
+    <button onclick="openCustomization('Eba & Egusi Soup', 1200)">Customize & Add</button>
+
+      <!-- <button>Add to Cart</button> -->
+    </div>
+    <div class="menu-card">
+      <img src="/frontEnd/image/foood_16.jpg" alt="Eba">
+      <h3>Pizza</h3>
+      <p>₦1,800</p>
+      <!-- <button>Add to Cart</button> -->
+    <button onclick="openCustomization('Pizza', 1200)">Customize & Add</button>
+
+    </div>
+    <div class="menu-card">
+      <img src="/frontEnd/image/launch_3.jpg" alt="Eba">
+      <h3>Jollof rice & Beef & plantain</h3>
+      <p>₦1,800</p>
+      <!-- <button>Add to Cart</button> -->
+    <button onclick="openCustomization(' Jollof Rice & Beef & Plaintain ', 1200)">Customize & Add</button>
+
+    </div>
+    <div class="menu-card">
+      <img src="/frontEnd/image/foood_2.jpg" alt="Eba">
+      <h3>Semo & Egusi Soup</h3>
+      <p>₦1,800</p>
+      <!-- <button>Add to Cart</button> -->
+    <button onclick="openCustomization('Semo & Egusi Soup', 1200)">Customize & Add</button>
+
+    </div>
+    <div class="menu-card">
+      <img src="/frontEnd/image/foood_8.jpg" alt="Eba">
+      <h3>Amala & Egusi Soup</h3>
+      <p>₦1,800</p>
+      <!-- <button>Add to Cart</button> -->
+    <button onclick="openCustomization('Amala & Egusi Soup', 1200)">Customize & Add</button>
+
+    </div>
+    <div class="menu-card">
+      <img src="/frontEnd/image/laucnh_1.jpg" alt="Eba">
+      <h3>Eba & Vegetable Soup</h3>
+      <p>₦1,800</p>
+      <!-- <button>Add to Cart</button> -->
+    <button onclick="openCustomization('Eba & Vegetable Soup', 1200)">Customize & Add</button>
+
+    </div>
+  </section>
+
+  <!-- Dinner -->
+  <section id="dinner" class="tab-content ">
+    <div class="menu-card">
+      <img src="/frontEnd/image/foood_7.jpg" alt="Suya">
+      <!-- <h3>Noodles & Egg</h3> -->
+      <h3>Suya</h3>
+      <p>₦900</p>
+      <!-- <button>Add to Cart</button> -->
+    <button onclick="openCustomization('Suya', 1200)">Customize & Add</button>
+
+    </div>
+    <div class="menu-card">
+      <img src="/frontEnd/image/foood_21.jpg" alt="Pepper Soup">
+      <!-- <h3>Goat Meat Pepper Soup</h3> -->
+      <h3>Roasted Fish</h3>
+      <p>₦2,000</p>
+      <!-- <button>Add to Cart</button> -->
+    <button onclick="openCustomization('Roasted Fish', 1200)">Customize & Add</button>
+
+    </div>
+    <div class="menu-card">
+      <img src="/frontEnd/image/foood_9.jpg" alt="Pepper Soup">
+      <h3>Suya & Masa</h3>
+      <p>₦2,000</p>
+      <!-- <button>Add to Cart</button> -->
+    <button onclick="openCustomization('Suya & Masa', 1200)">Customize & Add</button>
+
+    </div>
+    <div class="menu-card">
+      <img src="/frontEnd/image/pof_pof.jpg" alt="Pepper Soup">
+      <h3>Puf Puf</h3>
+      <p>₦2,000</p>
+      <!-- <button>Add to Cart</button> -->
+    <button onclick="openCustomization('Puf Puf', 1200)">Customize & Add</button>
+
+    </div>
+    <div class="menu-card">
+      <img src="/frontEnd/image/foood_18.jpg" alt="Pepper Soup">
+      <h3>Roasted Meat</h3>
+      <p>₦2,000</p>
+    <button onclick="openCustomization('Roasted Meat', 1200)">Customize & Add</button>
+      <!-- <button>Add to Cart</button> -->
+       
+    </div>
+  </section>
+
+  <!-- <div class="menu-container"> -->
+    <!-- Menu Item 1 -->
+    <!-- <div class="menu-item">
+      <img src="/frontEnd/image/foood_20.jpg" alt="Rice and Stew">
+      <h3>Rice & Stew</h3>
+      <p>₦800</p>
+    </div> -->
+
+    <!-- Menu Item 2 -->
+    <!-- <div class="menu-item">
+      <img src="/frontEnd/image/beans_and_bread.jpg" alt="Beans and Plantain">
+      <h3>Beans & Plantain</h3>
+      <p>₦700</p>
+    </div> -->
+
+    <!-- Menu Item 3 -->
+    <!-- <div class="menu-item">
+      <img src="/frontEnd/image/food_5.jpg" alt="Spaghetti with Egg">
+      <h3>Spaghetti </h3>
+      <p>₦600</p>
+    </div> -->
+
+    <!-- Menu Item 4 -->
+    <!-- <div class="menu-item">
+      <img src="/frontEnd/image/foood_1.jpg" alt="Eba and Soup">
+      <h3>Eba & Soup</h3>
+      <p>₦900</p>
+    </div>
+  </div> -->
+</section> 
+
+  <!-- about us -->
+<section id="about" class="about">
+  <div class="about-container">
+    <div class="about-text">
+      <h2>About Us</h2>
+      <p>
+        At SilverGold Canteen, we serve freshly prepared meals that are 
+        affordable, tasty, and made with love. Our goal is to provide 
+        students and staff with nutritious food that keeps them energized 
+        throughout the day.
+      </p>
+      <p>
+        Whether you're here for a quick snack or a full meal, we’ve got you covered!
+      </p>
+    </div>
+    <div class="about-image">
+      <img src="/frontEnd/image/foood_12.jpg" alt="Canteen food image">
+    </div>
+  </div>
+</section>
+
+<!-- contact -->
+<section id="contact" class="contact">
+  <div class="contact-header">
+    <h2>Contact Us</h2>
+    <p>We’d love to hear from you!</p>
+  </div>
+
+  <div class="contact-container">
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <h3>Get In Touch</h3>
+      <p><strong>Address:</strong> SilverGold, Nasarawa, Nigeria</p>
+      <p><strong>Phone:</strong> +234 902 084 8791</p>
+      <p><strong>Email:</strong> silvergold@gmail.com</p>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="contact-form">
+      <form action="#" method="post">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="footer">
+  <div class="footer-container">
+    <!-- About / Logo -->
+    <div class="footer-about">
+      <h3>SilverGold Canteen</h3>
+      <p>Delicious, affordable, and fresh meals served daily with love. We keep you energized every day!</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+         <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About Us</a></li>
+        <!-- <li><a href="#why-us">Why Choose Us</a></li> -->
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Social Media -->
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href="#"><img src="facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="instagram.png" alt="Instagram"></a>
+        <a href="#"><img src="twitter.png" alt="Twitter"></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="footer-bottom">
+    <p>&copy; 2025 SilverGold Canteen | All Rights Reserved</p>
+  </div>
+</footer>
+
+
+<div id="customModal" class="custom-modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeCustomization()">×</span>
+      <h3 id="mealName">Customize Meal</h3>
+      <label>
+        <input type="checkbox" value="Egg" data-price="100"> Add Egg (+₦100)
+      </label><br>
+      <label>
+        <input type="checkbox" value="Extra Meat" data-price="200"> Extra Meat (+₦200)
+      </label><br>
+      <label>
+        <input type="checkbox" value="No Pepper" data-price="0"> No Pepper
+      </label><br>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+  </div>
+<script src="/frontEnd/script/script.js"></script>
+
+ 
+
+
+  </body>
+</html>

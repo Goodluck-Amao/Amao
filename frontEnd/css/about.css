@@ -3,11 +3,6 @@
     margin: 0px;
     padding: 0px;
 }
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
 /* navbar */
 .navbar {
     display: flex;
@@ -56,45 +51,39 @@ body {
     padding: 0px 10px 0px 0px;
     
 }
+/* heading */
 
-/* section (main) */
-main{
-    background-image: url(/image/yam_vegetable.jpg);
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
-    padding: 20px;
-    z-index: -1;
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
 }
-.text{
-    z-index: 1;
-    padding: 60px 40px;
+.line_1{
+    background-color: red;
+    height: 4px;
+    width: 80px;
+    margin: 10px;
+}
+.line_2{
+    background-color: green;
+    height: 4px;
+    width: 80px;
+    margin: 10px;
+}
 
+/* section */
+section{
+    padding:0px 10px ;
 }
-h1{
-    font-size: 40px;
-    font-weight: bold;
-}
-p{
-    font-size: 20px;
-    /* font-weight: ; */
-    font-weight: 600;
-}
+/* footer */
 
 footer{
+    margin-top: 11px;
     background-color: #333;
     padding: 1rem;
+    color: #fff;
     justify-content: center;
     display: flex;
     align-items: center;
 }
-
-
-
-
-
-
-
-
-
-
