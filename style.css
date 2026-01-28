@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    margin-bottom: 0px;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
+    margin:0;
+    padding-left: 30px;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+.user-profile {
+    margin-left: 20px;
+    
+}
+
+.user-profile a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0px 10px 0px 0px;
+    
+}
+
+/* section (main) */
+main{
+    background-image: url(/image/yam_vegetable.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+    z-index: -1;
+}
+.text{
+    z-index: 1;
+    padding: 60px 40px;
+
+}
+h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+p{
+    font-size: 20px;
+    /* font-weight: ; */
+    font-weight: 600;
+}
+
+footer{
+    background-color: #333;
+    padding: 1rem;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+

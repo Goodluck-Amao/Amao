@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+.container{
+     background-color: #0082b5; 
+     opacity: 0.9;   
+     }
+    body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    background-image: url(image/food_2.png);
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    }
+form{
+       padding: 20px 40px;
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       gap: 20px;
+    }   
+    input{
+        padding:10px;
+    }   
+    h1{
+        text-align: center;
+        justify-content: center;
+        padding: 10px 0px 0px 0px;
+    } 
+    select{
+        grid-column: span 2;
+    }
+    button{
+     padding: 10px 40px;
+     /* margin-left: 70%; */
+     /* margin: 10px auto; */
+     grid-column: span 2;
+
+    }
+    .term{
+
+        /* background-color: red; */
+        margin-right: auto;
+    }
+     label{
+       background-color: aqua;
+       
+    }
+   
