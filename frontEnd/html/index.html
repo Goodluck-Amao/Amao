@@ -4,47 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Canteen Website</title>
-    <!-- <link rel="stylesheet" href="../css/style.css" /> -->
-    <link rel="stylesheet" href="/frontEnd/css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
     <nav class="navbar">
       <div class="logo">
-        <img src="logo.png" alt="SilverGold" />
+        <img src="../image/logo.png" alt="SilverGold" />
       </div>
-      <ul class="nav-links">
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links" id="navLinks">
         <li><a href="index.html">Home</a></li>
-        <!-- <li><a href="#meynu">Menu</a></li> -->
          <li>   <a href="#">Menu ▾</a>
-        <!-- <div class="dropdown-content">
-          <a href="#breakfast">Breakfast</a>
-          <a href="#lun">Lunch</a>
-          <a href="#dinner">Dinner</a>
-        </div> -->
         <div class="dropdown-content">
   <a href="#menu" onclick="openTab('breakfast')">Breakfast</a>
   <a href="#menu" onclick="openTab('lun')">Lunch</a>
   <a href="#menu" onclick="openTab('dinner')">Dinner</a>
 </div> 
 
-<!-- <div class="dropdown-content">
-  <a href="#menu" onclick="openTab('breakfast', event)">Breakfast</a>
-  <a href="#menu" onclick="openTab('lun', event)">Lunch</a>
-  <a href="#menu" onclick="openTab('dinner', event)">Dinner</a>
-</div> -->
-
-
         </li>
-      </li>
-        <li><a href="#order_online">Order Online</a></li>
+        <li><a href="subscription.html">subscription</a></li>
         <li><a href="#about">About Us</a></li>
         <li><a href="#contact">Contact Us</a></li>
       </ul>
-      <div class="user-profile">
-        <a href="login.html">cart</a>
-        <a href="login.html">Login</a>
-        <a href="login.html">Sign up</a>
-        <!-- <a href="register.html">Register</a> -->
+      <div class="user-profile" id="userProfile">
+        <a href="order_history.php">Orders</a>
+        <a href="login.php">Login</a>
+        <a href="register.php">Sign up</a>
       </div>
     </nav>
   
@@ -85,7 +74,7 @@
    <!-- Breakfast -->
   <section id="breakfast" class="tab-content active">
     <div class="menu-card">
-      <img src="/frontEnd/image/break_4.jpg" alt="Tea">
+      <img src="../image/break_4.jpg" alt="Tea">
       <h3>Beans & Plaintain</h3>
       <p>₦500</p>
     <button onclick="openCustomization('Beans & Plantain', 1200)">Customize & Add</button>
@@ -93,14 +82,14 @@
       <!-- <button>Add to Cart</button> -->
     </div>
     <div class="menu-card">
-      <img src="/frontEnd/image/break.jpg" alt="Pap & Akara">
+      <img src="../image/break.jpg" alt="Pap & Akara">
       <h3>Pap & Akara</h3>
       <p>₦700</p>
     <button onclick="openCustomization('Pap & Akara', 1200)">Customize & Add</button>
     <!-- <button>Add to Cart</button> -->
     </div>
     <div class="menu-card">
-      <img src="/frontEnd/image/beans_and_bread.jpg" alt="Pap & Akara">
+      <img src="../image/beans_and_bread.jpg" alt="Pap & Akara">
       <h3>Beans & Bread</h3>
       <p>₦700</p>
     <button onclick="openCustomization('Beans & Bread', 1200)">Customize & Add</button>
@@ -108,14 +97,14 @@
       <!-- <button>Add to Cart</button> -->
     </div>
     <div class="menu-card">
-      <img src="/frontEnd/image/break_2.jpg" alt="Pap & Akara">
+      <img src="../image/break_2.jpg" alt="Pap & Akara">
       <h3>Pap & Akara</h3>
       <p>₦700</p>
     <button onclick="openCustomization('Pap & Akara', 1200)">Customize & Add</button>
       <!-- <button>Add to Cart</button> -->
     </div>
     <div class="menu-card">
-      <img src="/frontEnd/image/break_7.jpg" alt="Pap & Akara">
+      <img src="../image/break_7.jpg" alt="Pap & Akara">
       <h3>Plantain Chip</h3>
       <p>₦700</p>
     <button onclick="openCustomization('Plaintain Chip', 1200)">Customize & Add</button>
@@ -123,7 +112,7 @@
       <!-- <button>Add to Cart</button> -->
     </div>
     <div class="menu-card">
-      <img src="/frontEnd/image/break.jpg" alt="Pap & Akara">
+      <img src="../image/break.jpg" alt="Pap & Akara">
       <h3>Pap & Akara</h3>
       <p>₦700</p>
     <button onclick="openCustomization('Pap & Akara', 1200)">Customize & Add</button>
@@ -159,7 +148,7 @@
   <!-- Lunch -->
   <section id="lun" class="tab-content ">
     <div class="menu-card">
-      <img src="/frontEnd/image/dinner_2.jpg" alt="Jollof">
+      <img src="../image/dinner_2.jpg" alt="Jollof">
       <h3>Jollof Rice & Chicken</h3>
       <p>₦1,500</p>
     <button onclick="openCustomization(' JOllof Rice & Chicken', 1200)">Customize & Add</button>
@@ -167,7 +156,7 @@
       <!-- <button>Add to Cart</button> -->
     </div>
     <div class="menu-card">
-      <img src="/frontEnd/image/dinner_4.jpg" alt="Eba">
+      <img src="../image/dinner_4.jpg" alt="Eba">
       <h3>Eba & Egusi Soup</h3>
       <p>₦1,800</p>
     <button onclick="openCustomization('Eba & Egusi Soup', 1200)">Customize & Add</button>
@@ -175,7 +164,7 @@
       <!-- <button>Add to Cart</button> -->
     </div>
     <div class="menu-card">
-      <img src="/frontEnd/image/dinner_5.jpg" alt="Eba">
+      <img src="../image/dinner_5.jpg" alt="Eba">
       <h3>Eba & Egusi Soup</h3>
       <p>₦1,800</p>
     <button onclick="openCustomization('Eba & Egusi Soup', 1200)">Customize & Add</button>
@@ -183,7 +172,7 @@
       <!-- <button>Add to Cart</button> -->
     </div>
     <div class="menu-card">
-      <img src="/frontEnd/image/foood_16.jpg" alt="Eba">
+      <img src="../image/foood_16.jpg" alt="Eba">
       <h3>Pizza</h3>
       <p>₦1,800</p>
       <!-- <button>Add to Cart</button> -->
@@ -191,7 +180,7 @@
 
     </div>
     <div class="menu-card">
-      <img src="/frontEnd/image/launch_3.jpg" alt="Eba">
+      <img src="../image/launch_3.jpg" alt="Eba">
       <h3>Jollof rice & Beef & plantain</h3>
       <p>₦1,800</p>
       <!-- <button>Add to Cart</button> -->
@@ -199,7 +188,7 @@
 
     </div>
     <div class="menu-card">
-      <img src="/frontEnd/image/foood_2.jpg" alt="Eba">
+      <img src="../image/foood_2.jpg" alt="Eba">
       <h3>Semo & Egusi Soup</h3>
       <p>₦1,800</p>
       <!-- <button>Add to Cart</button> -->
@@ -207,7 +196,7 @@
 
     </div>
     <div class="menu-card">
-      <img src="/frontEnd/image/foood_8.jpg" alt="Eba">
+      <img src="../image/foood_8.jpg" alt="Eba">
       <h3>Amala & Egusi Soup</h3>
       <p>₦1,800</p>
       <!-- <button>Add to Cart</button> -->
@@ -215,7 +204,7 @@
 
     </div>
     <div class="menu-card">
-      <img src="/frontEnd/image/laucnh_1.jpg" alt="Eba">
+      <img src="../image/laucnh_1.jpg" alt="Eba">
       <h3>Eba & Vegetable Soup</h3>
       <p>₦1,800</p>
       <!-- <button>Add to Cart</button> -->
@@ -227,7 +216,7 @@
   <!-- Dinner -->
   <section id="dinner" class="tab-content ">
     <div class="menu-card">
-      <img src="/frontEnd/image/foood_7.jpg" alt="Suya">
+      <img src="../image/foood_7.jpg" alt="Suya">
       <!-- <h3>Noodles & Egg</h3> -->
       <h3>Suya</h3>
       <p>₦900</p>
@@ -236,7 +225,7 @@
 
     </div>
     <div class="menu-card">
-      <img src="/frontEnd/image/foood_21.jpg" alt="Pepper Soup">
+      <img src="../image/foood_21.jpg" alt="Pepper Soup">
       <!-- <h3>Goat Meat Pepper Soup</h3> -->
       <h3>Roasted Fish</h3>
       <p>₦2,000</p>
@@ -245,7 +234,7 @@
 
     </div>
     <div class="menu-card">
-      <img src="/frontEnd/image/foood_9.jpg" alt="Pepper Soup">
+      <img src="../image/foood_9.jpg" alt="Pepper Soup">
       <h3>Suya & Masa</h3>
       <p>₦2,000</p>
       <!-- <button>Add to Cart</button> -->
@@ -253,7 +242,7 @@
 
     </div>
     <div class="menu-card">
-      <img src="/frontEnd/image/pof_pof.jpg" alt="Pepper Soup">
+      <img src="../image/pof_pof.jpg" alt="Pepper Soup">
       <h3>Puf Puf</h3>
       <p>₦2,000</p>
       <!-- <button>Add to Cart</button> -->
@@ -261,7 +250,7 @@
 
     </div>
     <div class="menu-card">
-      <img src="/frontEnd/image/foood_18.jpg" alt="Pepper Soup">
+      <img src="../image/foood_18.jpg" alt="Pepper Soup">
       <h3>Roasted Meat</h3>
       <p>₦2,000</p>
     <button onclick="openCustomization('Roasted Meat', 1200)">Customize & Add</button>
@@ -273,33 +262,35 @@
   <!-- <div class="menu-container"> -->
     <!-- Menu Item 1 -->
     <!-- <div class="menu-item">
-      <img src="/frontEnd/image/foood_20.jpg" alt="Rice and Stew">
+      <img src="../image/foood_20.jpg" alt="Rice and Stew">
       <h3>Rice & Stew</h3>
       <p>₦800</p>
     </div> -->
 
     <!-- Menu Item 2 -->
     <!-- <div class="menu-item">
-      <img src="/frontEnd/image/beans_and_bread.jpg" alt="Beans and Plantain">
+      <img src="../image/beans_and_bread.jpg" alt="Beans and Plantain">
       <h3>Beans & Plantain</h3>
       <p>₦700</p>
     </div> -->
 
     <!-- Menu Item 3 -->
     <!-- <div class="menu-item">
-      <img src="/frontEnd/image/food_5.jpg" alt="Spaghetti with Egg">
+      <img src="../image/food_5.jpg" alt="Spaghetti with Egg">
       <h3>Spaghetti </h3>
       <p>₦600</p>
     </div> -->
 
     <!-- Menu Item 4 -->
     <!-- <div class="menu-item">
-      <img src="/frontEnd/image/foood_1.jpg" alt="Eba and Soup">
+      <img src="../image/foood_1.jpg" alt="Eba and Soup">
       <h3>Eba & Soup</h3>
       <p>₦900</p>
     </div>
   </div> -->
 </section> 
+
+
 
   <!-- about us -->
 <section id="about" class="about">
@@ -317,7 +308,7 @@
       </p>
     </div>
     <div class="about-image">
-      <img src="/frontEnd/image/foood_12.jpg" alt="Canteen food image">
+      <img src="../image/foood_12.jpg" alt="Canteen food image">
     </div>
   </div>
 </section>
@@ -340,7 +331,7 @@
 
     <!-- Contact Form -->
     <div class="contact-form">
-      <form action="#" method="post">
+      <form action="../../backEnd/contact.php" method="post">
         <input type="text" name="name" placeholder="Your Name" required>
         <input type="email" name="email" placeholder="Your Email" required>
         <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
@@ -375,9 +366,9 @@
     <div class="footer-social">
       <h4>Follow Us</h4>
       <div class="social-icons">
-        <a href="#"><img src="facebook.png" alt="Facebook"></a>
-        <a href="#"><img src="instagram.png" alt="Instagram"></a>
-        <a href="#"><img src="twitter.png" alt="Twitter"></a>
+        <a href="#"><img src="../image/facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="../image/instagram.png" alt="Instagram"></a>
+        <a href="#"><img src="../image/twitter.png" alt="Twitter"></a>
       </div>
     </div>
   </div>
@@ -405,7 +396,7 @@
       <button onclick="addToCart()">Add to Cart</button>
     </div>
   </div>
-<script src="/frontEnd/script/script.js"></script>
+<script src="../script/script.js"></script>
 
  
 

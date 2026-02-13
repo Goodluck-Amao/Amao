@@ -1,4 +1,27 @@
 
+// Hamburger menu toggle
+function toggleMenu() {
+  const navLinks = document.getElementById('navLinks');
+  const userProfile = document.getElementById('userProfile');
+  const hamburger = document.querySelector('.hamburger');
+  
+  navLinks.classList.toggle('active');
+  userProfile.classList.toggle('active');
+  hamburger.classList.toggle('open');
+}
+
+// Close menu when a link is clicked
+document.addEventListener('DOMContentLoaded', function() {
+  const navLinks = document.querySelectorAll('#navLinks a');
+  navLinks.forEach(link => {
+    link.addEventListener('click', function() {
+      document.getElementById('navLinks').classList.remove('active');
+      document.getElementById('userProfile').classList.remove('active');
+      document.querySelector('.hamburger').classList.remove('open');
+    });
+  });
+});
+
     //  Tab switcher
     //  function openTab(tabId)
     //   {

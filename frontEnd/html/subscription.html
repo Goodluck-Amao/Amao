@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subscription Plans - SilverGold Canteen</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/subscription.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="../image/logo.png" alt="SilverGold" />
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="order.php">Menu</a></li>
+      <li><a href="subscription.html" class="active">Subscription</a></li>
+      <li><a href="index.html#about">About Us</a></li>
+      <li><a href="index.html#contact">Contact Us</a></li>
+    </ul>
+    <div class="user-profile" id="userProfile">
+      <a href="order_history.php">Orders</a>
+      <a href="login.php">Login</a>
+      <a href="register.php">Sign up</a>
+    </div>
+  </nav>
+
+  <!-- Header Section -->
+  <header class="sub-header">
+    <h1>Subscription Plans</h1>
+    <p>Get unlimited access to delicious meals with our flexible pricing plans</p>
+  </header>
+
+  <!-- Plans Section -->
+  <section class="plans-container">
+    <div class="plan-wrapper">
+      <!-- Daily Plan -->
+      <div class="plan-card">
+        <div class="plan-badge">Basic</div>
+        <h2 class="plan-name">Daily Plan</h2>
+        <div class="plan-price">
+          <span class="currency">₦</span>
+          <span class="amount">1,000</span>
+          <span class="period">/day</span>
+        </div>
+        
+        <ul class="plan-features">
+          <li><span class="check">✓</span> One nutritious meal per day</li>
+          <li><span class="check">✓</span> Access to all menu items</li>
+          <li><span class="check">✓</span> Valid for 24 hours</li>
+          <li><span class="check">✓</span> Flexible cancellation</li>
+        </ul>
+
+        <form action="subscribe-success.html" class="subscription-form">
+          <input type="text" name="fullname" placeholder="Full Name" required>
+          <input type="email" name="email" placeholder="Email Address" required>
+          <input type="tel" name="phone" placeholder="Phone Number" required>
+          <button type="submit" class="btn-subscribe">Subscribe Now</button>
+        </form>
+      </div>
+
+      <!-- Weekly Plan (Most Popular) -->
+      <div class="plan-card popular">
+        <div class="plan-badge popular-badge">Standard</div>
+        <h2 class="plan-name">Weekly Plan</h2>
+        <div class="plan-price">
+          <span class="currency">₦</span>
+          <span class="amount">5,000</span>
+          <span class="period">/week</span>
+        </div>
+
+        <ul class="plan-features">
+          <li><span class="check">✓</span> One meal per day (7 meals total)</li>
+          <li><span class="check">✓</span> Full access to menu</li>
+          <li><span class="check">✓</span> Priority ordering</li>
+          <li><span class="check">✓</span> Free delivery (selected areas)</li>
+          <li><span class="check">✓</span> Save 30% vs daily rate</li>
+        </ul>
+
+        <form action="subscribe-success.html" class="subscription-form">
+          <input type="text" name="fullname" placeholder="Full Name" required>
+          <input type="email" name="email" placeholder="Email Address" required>
+          <input type="tel" name="phone" placeholder="Phone Number" required>
+          <button type="submit" class="btn-subscribe">Subscribe Now</button>
+        </form>
+      </div>
+
+      <!-- Monthly Plan -->
+      <div class="plan-card">
+        <div class="plan-badge">Premium</div>
+        <h2 class="plan-name">Monthly Plan</h2>
+        <div class="plan-price">
+          <span class="currency">₦</span>
+          <span class="amount">18,000</span>
+          <span class="period">/month</span>
+        </div>
+
+        <ul class="plan-features">
+          <li><span class="check">✓</span> One meal daily (30 meals total)</li>
+          <li><span class="check">✓</span> Unlimited menu access</li>
+          <li><span class="check">✓</span> Priority + express ordering</li>
+          <li><span class="check">✓</span> Free delivery everywhere</li>
+          <li><span class="check">✓</span> Save 40% vs daily rate</li>
+        </ul>
+
+        <form action="subscribe-success.html" class="subscription-form">
+          <input type="text" name="fullname" placeholder="Full Name" required>
+          <input type="email" name="email" placeholder="Email Address" required>
+          <input type="tel" name="phone" placeholder="Phone Number" required>
+          <button type="submit" class="btn-subscribe">Subscribe Now</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-container">
+      <div class="faq-item">
+        <h3>Can I cancel my subscription anytime?</h3>
+        <p>Yes, you can cancel your subscription at any time without penalties. Contact our support team for assistance.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What happens if I don't use all my meals?</h3>
+        <p>Meals are valid for the duration of your subscription period. Unused meals cannot be carried over to the next period.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Can I upgrade or downgrade my plan?</h3>
+        <p>Yes, you can upgrade to a higher plan anytime. Downgrades are available on your next renewal date.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Do you offer group or corporate plans?</h3>
+        <p>Yes! Contact us for special corporate rates for offices and organizations.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-about">
+        <h3>SilverGold Canteen</h3>
+        <p>Providing quality meals to students and professionals since 2026.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="order.php">Order Now</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h4>Contact</h4>
+        <p>📞 +2349020848791</p>
+        <p>📧 amaogoodluck599@gmail.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 SilverGold Canteen. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../script/script.js"></script>
+</body>
+</html>
+

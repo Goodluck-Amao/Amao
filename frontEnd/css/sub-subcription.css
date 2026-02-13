@@ -1,0 +1,50 @@
+/* ===== SUCCESS PAGE STYLES ===== */
+.success-bg {
+  background: linear-gradient(135deg, #2d6a4f, #40916c);
+}
+
+.check {
+  font-size: 50px;
+  color: #2d6a4f;
+  background: #e9f5ec;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+}
+
+/* ===== MENU PAGE STYLES ===== */
+.menu-header {
+  background: #2d6a4f;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+}
+
+.menu-card {
+  background: white;
+  width: 250px;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+}
+
+.menu-card h3 {
+  color: #2d6a4f;
+}
+
+.menu-footer {
+  text-align: center;
+  padding: 15px;
+  background: #f1f1f1;
+  color: #555;
+}

@@ -1,0 +1,298 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Subscription Successful</title>
+  <link rel="stylesheet" href="../css/subscription.css">
+</head>
+<body class="center">
+
+  <div class="success-box">
+    <h2>Subscription Successful 🎉</h2>
+    <p>Your meal plan has been activated.</p>
+
+    <a href="menu.html" class="btn">Go to Menu</a>
+  </div>
+
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subscription Successful - SilverGold Canteen</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/subscription.css">
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    }
+
+    .navbar {
+      flex-shrink: 0;
+    }
+
+    .success-container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    .success-box {
+      background: white;
+      padding: 50px 40px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
+      max-width: 600px;
+      animation: slideIn 0.5s ease-out;
+    }
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .success-icon {
+      width: 80px;
+      height: 80px;
+      background: #4caf50;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+      margin: 0 auto 25px;
+    }
+
+    .success-box h2 {
+      color: #333;
+      font-size: 2.2rem;
+      margin: 0 0 15px 0;
+      font-weight: 700;
+    }
+
+    .success-box p {
+      color: #666;
+      font-size: 1.05rem;
+      line-height: 1.8;
+      margin: 0 0 30px 0;
+    }
+
+    .subscription-details {
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 10px;
+      margin: 20px 0;
+      text-align: left;
+      border-left: 4px solid #4caf50;
+    }
+
+    .subscription-details p {
+      margin: 8px 0;
+      color: #555;
+      font-size: 0.95rem;
+    }
+
+    .subscription-details strong {
+      color: #333;
+    }
+
+    .btn-group {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      margin-top: 30px;
+      flex-wrap: wrap;
+    }
+
+    .btn-success {
+      background: linear-gradient(135deg, #4caf50 0%, #45a049 100%);
+    }
+
+    .btn-secondary {
+      background: linear-gradient(135deg, #666 0%, #555 100%);
+    }
+
+    .btn-success:hover,
+    .btn-secondary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .footer {
+      flex-shrink: 0;
+      margin-top: auto;
+    }
+
+    @media (max-width: 768px) {
+      .success-container {
+        padding: 30px 15px;
+      }
+
+      .success-box {
+        padding: 30px 20px;
+      }
+
+      .success-icon {
+        width: 70px;
+        height: 70px;
+        font-size: 2.5rem;
+      }
+
+      .success-box h2 {
+        font-size: 1.8rem;
+      }
+
+      .success-box p {
+        font-size: 1rem;
+      }
+
+      .btn-group {
+        gap: 10px;
+      }
+
+      .btn {
+        flex: 1;
+        min-width: 120px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .success-container {
+        padding: 20px 10px;
+      }
+
+      .success-box {
+        padding: 25px 15px;
+      }
+
+      .success-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 2rem;
+        margin-bottom: 15px;
+      }
+
+      .success-box h2 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+      }
+
+      .success-box p {
+        font-size: 0.9rem;
+        margin-bottom: 20px;
+      }
+
+      .subscription-details {
+        padding: 15px;
+        margin: 15px 0;
+      }
+
+      .subscription-details p {
+        font-size: 0.9rem;
+        margin: 6px 0;
+      }
+
+      .btn-group {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 20px;
+      }
+
+      .btn {
+        width: 100%;
+        padding: 11px 20px !important;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="../image/logo.png" alt="SilverGold" />
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="order.php">Menu</a></li>
+      <li><a href="subscription.html" class="active">Subscription</a></li>
+      <li><a href="index.html#about">About Us</a></li>
+      <li><a href="index.html#contact">Contact Us</a></li>
+    </ul>
+    <div class="user-profile" id="userProfile">
+      <a href="order_history.php">Orders</a>
+      <a href="login.php">Login</a>
+      <a href="register.php">Sign up</a>
+    </div>
+  </nav>
+
+  <!-- Success Container -->
+  <div class="success-container">
+    <div class="success-box">
+      <div class="success-icon">✓</div>
+      <h2>Subscription Successful! 🎉</h2>
+      <p>Your meal subscription has been activated successfully. You can now enjoy unlimited access to our menu.</p>
+
+      <div class="subscription-details">
+        <p><strong>Plan Activated:</strong> Your subscription is now active and ready to use.</p>
+        <p><strong>Next Steps:</strong> Visit our menu to start ordering your meals.</p>
+        <p><strong>Need Help?</strong> Contact us at support@silvergoldcanteen.com</p>
+      </div>
+
+      <div class="btn-group">
+        <a href="order.php" class="btn btn-success">View Menu & Order</a>
+        <a href="index.html" class="btn btn-secondary">Return to Home</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-about">
+        <h3>SilverGold Canteen</h3>
+        <p>Providing quality meals to students and professionals since 2026.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="order.php">Order Now</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h4>Contact</h4>
+        <p>📞 +234 (0) 701 234 5678</p>
+        <p>📧 info@silvergoldcanteen.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 SilverGold Canteen. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../script/script.js"></script>
+</body>
+</html> 
+
+

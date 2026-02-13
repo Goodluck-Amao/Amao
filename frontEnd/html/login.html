@@ -4,17 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Canteen website</title>
-   <link rel="stylesheet" href="/frontEnd/css/login.css">
+    <link rel="stylesheet" href="../css/login.css">
 </head>
 <body>
-    <form action=""> 
+    <form action="../../backEnd/login.php" method="post"> 
         <a href="index.html">×</a>
-       <h2>add your crenditials</h2>
-    <input type="text" placeholder="Username" required>
-    <input type="password" placeholder="Password" required>
-   <!-- <button type="submit"> LOG IN </button>   -->
-   <a href="order.html" type="submit"> LOG IN</a>
-    
+       <h2>add your credentials</h2>
+    <input type="text" name="username" placeholder="Email / Phone / Full Name" required>
+    <input type="password" name="password" placeholder="Password" required>
+   <button type="submit"> LOG IN </button>
    </form>
 </body>
 </html>

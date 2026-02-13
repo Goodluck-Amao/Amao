@@ -68,3 +68,71 @@
     button:hover{
     background-color: red;
     }
+
+    /* Mobile Responsive Styles */
+    @media (max-width: 768px) {
+        body{
+            height: auto;
+            padding: 20px 0;
+        }
+        form{
+            width: 90%;
+            padding: 40px 25px;
+            margin: 20px auto;
+        }
+        a{
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+        h2{
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+        input{
+            margin: 15px 0;
+            padding: 14px;
+            font-size: 16px;
+            grid-template-columns: 1fr;
+        }
+        ::placeholder{
+            font-size: 16px;
+        }
+        button{
+            padding: 14px;
+            font-size: 16px;
+            border-radius: 4px;
+            min-height: 44px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        body{
+            padding: 10px 0;
+        }
+        form{
+            width: 95%;
+            padding: 30px 16px;
+            margin: 15px auto;
+            background-color: red;
+        }
+        a{
+            font-size: 24px;
+            margin-bottom: 12px;
+        }
+        h2{
+            font-size: 1.2rem;
+            margin-bottom: 16px;
+        }
+        input{
+            margin: 12px 0;
+            padding: 12px;
+            font-size: 14px;
+        }
+        ::placeholder{
+            font-size: 14px;
+        }
+        button{
+            padding: 12px;
+            font-size: 14px;
+        }
+    }
